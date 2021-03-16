@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\Dotnet.Onion.Templante.Crosscutting\MinhaEmpresa.CrudCliente.Crosscutting.csproj" />
+	  <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Infrastructure\MinhaEmpresa.CrudCliente.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

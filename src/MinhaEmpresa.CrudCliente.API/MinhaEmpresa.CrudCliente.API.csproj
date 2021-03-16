@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>0b0bf783-ec53-454f-9ea9-8bb2cd2867aa</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>9.0</LangVersion>  
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Bindings\**" />
+	  <Content Remove="Bindings\**" />
+	  <EmbeddedResource Remove="Bindings\**" />
+	  <None Remove="Bindings\**" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.2" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI" Version="5.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="5.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="5.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="MediatR" Version="9.0.0" />
+	</ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Application\MinhaEmpresa.CrudCliente.Application.csproj" />
+    <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Domain\MinhaEmpresa.CrudCliente.Domain.csproj" />
+    <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Infrastructure\MinhaEmpresa.CrudCliente.Infrastructure.csproj" />
+    <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Repository\MinhaEmpresa.CrudCliente.Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>
