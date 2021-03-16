@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="..\Dotnet.Onion.Templante.Crosscutting\MinhaEmpresa.CrudCliente.Crosscutting.csproj" />
 	  <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Infrastructure\MinhaEmpresa.CrudCliente.Infrastructure.csproj" />
   </ItemGroup>
 

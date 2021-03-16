@@ -14,6 +14,6 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Dotnet.Onion.Templante.Crosscutting\MinhaEmpresa.CrudCliente.Crosscutting.csproj" />
+	  <ProjectReference Include="..\MinhaEmpresa.CrudCliente.Crosscutting\MinhaEmpresa.CrudCliente.Crosscutting.csproj" />
 	</ItemGroup>
 </Project>
